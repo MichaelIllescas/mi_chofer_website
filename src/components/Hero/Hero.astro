@@ -1,16 +1,35 @@
 ---
-import './hero.css';
-import video from '../../assets/mp4/bg.mp4'
+import "./hero.css";
+import video from "../../assets/mp4/bg.mp4";
 ---
 
-<!-- Background Video-->
 <section class="hero">
-  <video
-    class="bg-video"
-    playsinline="playsinline"
-    autoplay="autoplay"
-    muted="muted"
-    loop="loop"><source src={video} type="video/mp4" /></video
-  >
-  
+  <!-- Video de fondo -->
+  <video class="bg-video" playsinline autoplay muted loop>
+    <source src={video} type="video/mp4" />
+  </video>
+
+  <!-- Contenido encima del video -->
+  <div class="masthead d-flex align-items-center">
+    <div class="masthead-content text-white text-center w-100">
+      <div class="container px-4 px-lg-0">
+        <h1 class="display-4 fw-bold mb-4">
+          Tu chofer privado, cuando lo necesites
+        </h1>
+        <p class="lead mb-5">
+          Confiá en Mi Chofer para tus traslados seguros, puntuales y
+          profesionales.
+        </p>
+
+        <!-- Botón CTA a WhatsApp -->
+        <a
+          href="https://wa.me/549XXXXXXXXXX?text=Hola%2C%20quisiera%20coordinar%20un%20servicio%20de%20traslado%20con%20Mi%20Chofer."
+          target="_blank"
+          class="btn btn-lg btn-success px-4 py-2"
+        >
+          Pedí tu Chofer
+        </a>
+      </div>
+    </div>
+  </div>
 </section>
