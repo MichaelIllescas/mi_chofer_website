@@ -10,6 +10,7 @@
   font-size: 2.5rem;
   font-weight: 700;
   color: #fff;
+  margin-top: -50px;
 }
 
 #beneficios p {
@@ -20,9 +21,10 @@
 
 #beneficios img {
   max-width: 100%;
-  height: auto;
-  margin-top: 2rem;
-  border-radius: 0.5rem;
+  height: 300px;
+  position: relative;
+  border-radius: 0.9rem;
+  margin-top: 50px;
 }
 
 /* Responsive spacing */
