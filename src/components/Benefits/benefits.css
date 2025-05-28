@@ -1,0 +1,41 @@
+/* Beneficios Section */
+#beneficios {
+  position: relative;
+  z-index: 3; /* mayor que el video y el overlay del hero */
+  background-color: #1a1a1a; /* fondo sólido para evitar transparencia */
+  padding: 5rem 0;
+}
+
+#beneficios h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+#beneficios p {
+  font-size: 1.1rem;
+  color: #d3d3d3;
+  margin-bottom: 1.5rem;
+}
+
+#beneficios img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 2rem;
+  border-radius: 0.5rem;
+}
+
+/* Responsive spacing */
+@media (min-width: 992px) {
+  #beneficios {
+    padding: 6rem 0;
+  }
+
+  #beneficios h2 {
+    font-size: 3rem;
+  }
+
+  #beneficios p {
+    font-size: 1.25rem;
+  }
+}
