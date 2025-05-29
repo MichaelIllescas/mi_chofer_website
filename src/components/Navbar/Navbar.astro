@@ -1,20 +1,15 @@
 ---
-import logo from '../../assets/img/logo.jpeg';
+import logo from '../../assets/img/logo-removebg-preview (2).png';
 import '../Navbar/Nav.css';
 ---
-
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm ">
- <div>
-  <img
-    src={logo.src}
-    alt="Logo"
-    class="navbar-logo"
-    
-  />
- </div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm " id="nav">
   <div class="container">
-    <a class="navbar-brand fw-bold text-primary" href="#">Mi Chofer</a>
+    <!-- Logo sin texto -->
+    <a href="#nav" class="navbar-brand d-flex align-items-center">
+      <img src={logo.src} alt="Logo" class="navbar-logo me-2" />
+    </a>
+
     <button
       class="navbar-toggler"
       type="button"
@@ -29,9 +24,7 @@ import '../Navbar/Nav.css';
 
     <div class="collapse navbar-collapse" id="navbarContent">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" href="#inicio">Inicio</a>
-        </li>
+      
         <li class="nav-item">
           <a class="nav-link" href="#como-funciona">Cómo Funciona</a>
         </li>
@@ -60,5 +53,3 @@ import '../Navbar/Nav.css';
     </div>
   </div>
 </nav>
-
-
