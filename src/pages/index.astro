@@ -1,21 +1,20 @@
 ---
-
-import Navbar from '../components/Navbar/Navbar.astro';
-import Layout from '../layouts/Layout.astro';
-import '../pages/styles.css';
-import Hero from '../components/Hero/Hero.astro';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Benefits from '../components/Benefits/Benefits.astro';
+import Navbar from "../components/Navbar/Navbar.astro";
+import Layout from "../layouts/Layout.astro";
+import "../pages/styles.css";
+import Hero from "../components/Hero/Hero.astro";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Benefits from "../components/Benefits/Benefits.astro";
+import About from "../components/About/About.astro";
 ---
 
 <Layout>
-	
-	<Navbar />
-	<Hero/>
-	<Benefits/>
+  <Navbar />
+  <Hero />
+  <Benefits />
+  <About />
 </Layout>
 <!-- Bootstrap JS CDN (para el menú colapsable) -->
 <script
   src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-  defer
-></script>
+  defer></script>
