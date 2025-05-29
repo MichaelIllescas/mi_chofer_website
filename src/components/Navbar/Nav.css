@@ -12,6 +12,7 @@ transition: all 0.3s ease-in-out;
 .navbar-logo:hover{
     transform: rotate(360deg);
 }
-.nav{
-    height: 100px !important;
+
+.nav-link {
+    font-size:large !important;
 }

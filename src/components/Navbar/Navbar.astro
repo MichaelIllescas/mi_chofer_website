@@ -1,9 +1,12 @@
 ---
 import logo from '../../assets/img/logo-removebg-preview (2).png';
 import '../Navbar/Nav.css';
+const phoneNumber = "5492392628465";
+const message = "Hola, quiero hacer una consulta sobre mi chofer.";
+const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 ---
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm " id="nav">
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm " id="nav" data-aos="fade-down">
   <div class="container">
     <!-- Logo sin texto -->
     <a href="#nav" class="navbar-brand d-flex align-items-center">
@@ -26,13 +29,13 @@ import '../Navbar/Nav.css';
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
       
         <li class="nav-item">
-          <a class="nav-link" href="#como-funciona">Cómo Funciona</a>
+          <a class="nav-link " href="#como-funciona">Cómo Funciona</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#beneficios">Beneficios</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#sobre-nosotros">Sobre Nosotros</a>
+          <a class="nav-link" href="#nosotros">Sobre Nosotros</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#faq">Preguntas Frecuentes</a>
@@ -43,11 +46,9 @@ import '../Navbar/Nav.css';
       </ul>
 
       <!-- Botón CTA -->
-      <a
-        class="btn btn-primary ms-lg-3"
-        href="https://wa.me/549XXXXXXXXXX"
-        target="_blank"
-      >
+
+        <a href={whatsappUrl} target="_blank" class="btn btn-primary ms-lg-3" aria-label="contactar por whatsapp">
+      
         Solicitar Servicio
       </a>
     </div>
