@@ -1,0 +1,27 @@
+---
+import './button.css';
+---
+
+<button class="scroll-top-btn" aria-label="Volver al inicio">
+  ↑
+</button>
+
+<script is:inline>
+  if (typeof window !== 'undefined') {
+    document.addEventListener("DOMContentLoaded", () => {
+      const btn = document.querySelector(".scroll-top-btn");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+          btn.style.display = "block";
+        } else {
+          btn.style.display = "none";
+        }
+      });
+
+      btn.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    });
+  }
+</script>
