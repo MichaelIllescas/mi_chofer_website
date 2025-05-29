@@ -1,0 +1,11 @@
+---
+import whatsappLogo from '../../assets/img/whatsaap.png';
+const phoneNumber = "5492392628465";
+const message = "Hola, quiero hacer una consulta sobre mi chofer.";
+const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+import './Whatsaap.css';
+---
+
+<a href={whatsappUrl} target="_blank" class="whatsaap-float" aria-label="contactar por whatsapp">
+  <img src={whatsappLogo.src} alt="WhatsApp" width="60" height="60" />
+</a>

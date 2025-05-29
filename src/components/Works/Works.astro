@@ -1,31 +1,37 @@
 ---
 import car from "../../assets/img/auto.jpeg";
+import './Works.css';
 ---
 
-<!-- Works Section -->
-<section class="conatiner my-5">
-  <div class="row justify-content-center">
-    <div class="col-md-8 col-lg-6">
-      <div class="card-shadow border-0">
-        <img src={car.src} class="card-img-top" alt="my chofer service" />
-        <div class="card-body">
-          <h2 class="card-title h4">
-            ¿No Quieres Manejar? Nosotros te llevamos.
-          </h2>
-          <p class="card-text">
-            <strong>Mi Chofer</strong> es un servicio profesional de conductores
-            privados ideal para cuando prefieresno estar al volante. Ya sea por comodidad,
-            seguridad o responsabilidad, estamos listos para llevarte donde necesites.
-          </p>
-          <ul class="list-unstyled ms-3">
-            <li>.</li>
-            <li></li>
-            <li></li>
-
-          </ul>
-        </div>
-      </div>
+<section id="como-funciona" class="container my-4">
+  <div class="works-container">
+    
+    <!-- Imagen con animación -->
+    <div class="works-image animate-image">
+      <img src={car.src} alt="Mi Chofer" class="works-img" />
     </div>
-    <div></div>
+
+    <!-- Separador -->
+    <div class="works-separator"></div>
+
+    <!-- Texto con animación -->
+    <div class="works-text animate-text">
+      <h2 class="card-title h5 text-primary mb-3">¿No querés manejar? Nosotros te llevamos.</h2>
+      <p><strong>Mi Chofer</strong> te ofrece un servicio personalizado, cómodo y seguro. Nuestro equipo de conductores profesionales está preparado para llevarte adonde necesites, sin preocupaciones.</p>
+
+      <ul class="list-unstyled ms-2 mb-3 small">
+        <li class="mb-1 hover-item">✔️ Salidas nocturnas sin preocupaciones</li>
+        <li class="mb-1 hover-item">✔️ Evitás el estrés del tráfico y del estacionamiento</li>
+        <li class="mb-1 hover-item">✔️ Usás tu propio vehículo con nuestro conductor</li>
+        <li class="mb-1 hover-item">✔️ Ideal para eventos, viajes de negocios y traslados privados</li>
+        <li class="mb-1 hover-item">✔️ Servicio disponible 24/7 con reserva anticipada</li>
+      </ul>
+
+      <blockquote class="blockquote text-secondary small fst-italic mt-3">
+        "Con Mi Chofer, cada viaje es una experiencia segura, elegante y responsable."
+      </blockquote>
+
+      <p class="fw-semibold mt-4">Tu vehículo. <span class="text-primary">Nuestro conductor.</span></p>
+    </div>
   </div>
 </section>

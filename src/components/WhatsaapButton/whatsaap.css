@@ -1,0 +1,18 @@
+.whatsaap-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  transition: transform 0.3s ease;
+  animation: pulse 2s infinite;
+  border-radius: 50%;
+  background-color: white;
+  padding: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
