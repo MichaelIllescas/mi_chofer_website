@@ -1,6 +1,6 @@
 .whatsaap-float {
   position: fixed;
-  bottom: 120px;
+  bottom: 60px;
   right: 20px;
   z-index: 9999;
   transition: transform 0.3s ease;
@@ -22,5 +22,17 @@
   }
   100% {
     transform: scale(1);
+  }
+}
+
+@media (max-width: 576px) {
+  .whatsaap-float {
+    bottom: 60px;
+    right: 15px;
+  }
+
+  .whatsaap-float img {
+    width: 65px;
+    height: 65px;
   }
 }

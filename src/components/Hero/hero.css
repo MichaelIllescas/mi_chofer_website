@@ -41,9 +41,7 @@ video.bg-video {
     background: url("../assets/img/bg-mobile-fallback.jpg") #2a5555 no-repeat center center scroll;
     background-size: cover;
   }
-  body video {
-    display: none;
-  }
+  
 }
 .masthead {
   position: relative;
@@ -74,7 +72,7 @@ video.bg-video {
   font-size: 2.5rem;
 }
 .masthead .masthead-content p {
-  font-size: 1.2rem;
+font-size: 1.3rem;
 }
 .masthead .masthead-content p strong {
   font-weight: 700;
@@ -143,6 +141,13 @@ video.bg-video {
     top: 0;
     right: 2.5rem;
     width: auto;
+  }
+
+}
+
+@media (max-width: 600px){
+    .hero{
+    height: 90dvh;
   }
 }
 

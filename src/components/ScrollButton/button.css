@@ -1,7 +1,7 @@
 .scroll-top-btn {
   position: fixed;
-  bottom: 60px;
-  right: 40px;
+  bottom: 20px;
+  right: 48px;
   width: 45px;
   height: 45px;
   border: none;
@@ -18,4 +18,13 @@
 
 .scroll-top-btn:hover {
   transform: scale(1.1);
+}
+@media (max-width: 576px) {
+  .scroll-top-btn {
+    bottom: 20px;
+    right: 28px;
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
 }
