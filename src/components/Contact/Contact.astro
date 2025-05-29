@@ -1,0 +1,77 @@
+---
+import "../Contact/contact.css";
+---
+
+<section id="contacto" class="contact-section bg-light text-dark py-5">
+  <div class="container px-4 px-lg-5">
+    <h2 class="text-center text-dark mb-3">Contacto</h2>
+
+    <div class="row justify-content-center">
+      <!-- Formulario -->
+      <div class="col-lg-6">
+        <form>
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input
+              type="text"
+              class="form-control"
+              id="nombre"
+              placeholder="Tu nombre completo"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="correo" class="form-label">Correo electrónico</label>
+            <input
+              type="email"
+              class="form-control"
+              id="correo"
+              placeholder="ejemplo@correo.com"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea
+              class="form-control"
+              id="mensaje"
+              rows="5"
+              placeholder="Contanos cómo podemos ayudarte"
+              required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-100"
+            >Enviar consulta</button
+          >
+        </form>
+      </div>
+
+      <!-- Datos de contacto -->
+      <div class="col-lg-5 mt-5 mt-lg-0">
+        <div class="contact-info p-4 rounded bg-dark text-white shadow">
+          <h5 class="mb-3">
+            <i class="bi bi-whatsapp me-2 text-success"></i> WhatsApp
+          </h5>
+          <p class="mb-3">
+            <a
+              href="https://wa.me/5491123456789"
+              target="_blank"
+              class="text-decoration-none text-white"
+            >
+              +54 9 11 2345 6789
+            </a>
+          </p>
+
+          <h5 class="mb-3">
+            <i class="bi bi-envelope-fill me-2 text-info"></i> Email
+          </h5>
+          <p>contacto@michofer.com</p>
+
+          <h5 class="mb-3">
+            <i class="bi bi-geo-alt-fill me-2 text-danger"></i> Zona de cobertura
+          </h5>
+          <p>Trenque Lauquen, Buenos Aires</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
