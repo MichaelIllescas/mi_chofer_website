@@ -1,0 +1,124 @@
+.contact-section {
+  background-color: #f8f9fa;
+  position: relative;
+  z-index: 3;
+}
+
+.contact-info {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.contact-info h5 {
+  font-weight: 600;
+}
+
+.contact-info a:hover {
+  color: #0d6efd;
+  text-decoration: underline;
+}
+
+
+.contact-section .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.contact-section .col-lg-6,
+.contact-section .col-lg-5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+
+/* Forzamos misma altura visual */
+.contact-section form,
+.contact-section .contact-info {
+  flex-grow: 1;
+  height: 100%;
+  min-height: 100%;
+}
+
+.contact-section .contact-info {
+  background-color: #212529;
+  color: #fff;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+}
+.contact-info h5 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+}
+
+.contact-info i {
+  font-size: 1.2rem;
+}
+/* FLEX para alinear columnas */
+.contact-section .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+/* Estilos base de columnas */
+.contact-section .col-lg-6,
+.contact-section .col-lg-5 {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Formularios y datos con altura igual */
+.contact-section form,
+.contact-section .contact-info {
+  flex-grow: 1;
+  height: 100%;
+  min-height: 100%;
+}
+
+/* Caja de información */
+.contact-section .contact-info {
+  background-color: #212529;
+  color: #fff;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* ← distribuye el contenido mejor */
+}
+
+/* Títulos con íconos */
+.contact-info h5 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.contact-info i {
+  font-size: 1.2rem;
+}
+
+/* Responsive: uno arriba del otro en pantallas pequeñas */
+@media (max-width: 991px) {
+  .contact-section .row {
+    flex-direction: column;
+  }
+
+  .contact-section .col-lg-6,
+  .contact-section .col-lg-5 {
+    width: 100%;
+  }
+
+  .contact-section .contact-info {
+    margin-top: 2rem;
+  }
+}
