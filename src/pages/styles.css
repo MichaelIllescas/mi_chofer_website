@@ -1,3 +1,29 @@
 html {
   scroll-behavior: smooth;
 }
+#loader {
+  display: flex;
+  position: fixed;
+  z-index: 99999;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.5s ease;
+}
+
+.spinner {
+  width: 60px;
+  height: 60px;
+  border: 6px solid #ddd;
+  border-top: 6px solid #0d6efd; /* Color primario */
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

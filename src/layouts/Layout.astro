@@ -5,20 +5,52 @@ import WhatsaapButton from "../components/WhatsaapButton/WhatsaapButton.astro";
 
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
-    <title>Mi Chofer</title>
-  </head>
+<head>
+  <!-- Codificación -->
+  <meta charset="UTF-8" />
+
+  <!-- Responsivo en móviles -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Título SEO amigable -->
+  <title>Mi Chofer - Traslados seguros y confiables</title>
+
+  <!-- Descripción SEO -->
+  <meta name="description" content="Mi Chofer ofrece servicios de traslado personalizados, seguros y confiables para empresas y particulares en toda la ciudad.">
+
+  <!-- Palabras clave (opcional, menor peso hoy en día) -->
+  <meta name="keywords" content="chofer, transporte privado, traslados ejecutivos, traslados seguros, servicio de chofer, Mi Chofer">
+
+  <!-- Autor y lenguaje -->
+  <meta name="author" content="Mi Chofer" />
+  <meta http-equiv="Content-Language" content="es" />
+
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+  <!-- Fuente optimizada desde Google Fonts -->
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  />
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+</head>
+
   <body>
+    <div id="loader">
+      <div class="spinner"></div>
+    </div>
     <slot />
-    
   </body>
 
-
-   <script type="module" src="/src/js/aos-init.js" defer></script>
- 
-
+  <script type="module" src="/js/loader.js" defer></script>
 </html>
