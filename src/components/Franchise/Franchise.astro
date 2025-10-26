@@ -1,10 +1,23 @@
 ---
-import franquicia from "../../assets/img/franquicia.jpeg";
+import franquicia from "../../assets/img/franquicia.webp";
 import "./franchise.css";
 ---
 
+
 <section class="franchise-section">
-  <div>
-    <img src={franquicia.src} alt="Franchise Promotion" class="franchise-img" />
+  <div class="franchise-bg-gradient">
+    {/* Decorativos */}
+    <span class="franchise-decor-circle one"></span>
+    <span class="franchise-decor-circle two"></span>
+    {/* Sparkles */}
+    <span class="franchise-sparkle s1"></span>
+    <span class="franchise-sparkle s2"></span>
+    <span class="franchise-sparkle s3"></span>
+    <span class="franchise-sparkle s4"></span>
+    <div class="franchise-container">
+      <h2 class="franchise-title">Sé parte de Mi Chofer</h2>
+      <p class="franchise-desc">Únete a nuestra red de franquicias y lleva el servicio de chofer profesional a tu ciudad. Crece con nosotros y forma parte de una empresa joven, innovadora y en expansión.</p>
+      <img src={franquicia.src} alt="Franchise Promotion" class="franchise-img" />
+    </div>
   </div>
 </section>

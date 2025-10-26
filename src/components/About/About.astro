@@ -1,64 +1,57 @@
 ---
 import "../About/about.css";
-import chofer from "../../assets/img/chofer.png";
+import chofer from "../../assets/img/chofer.webp";
 import "bootstrap-icons/font/bootstrap-icons.css";
 ---
 
+
+
 <section class="about-section" id="nosotros">
-  <div class="container px-4 px-lg-5">
-    <h2 class="mb-5 text-center">Conocenos un poco más</h2>
-
-    <div class="card-3d p-4">
-      <div class="row align-items-start">
-        <!-- Columna imagen -->
-        <div class="col-md-4 text-center mb-4 mb-md-0">
-          <img
-            src={chofer.src}
-            alt="Equipo de Mi Chofer"
-            class="img-fluid rounded img-float"
-          />
+  <div class="about-bg-gradient">
+    {/* Decorative animated circles */}
+    <span class="about-decor-circle one"></span>
+    <span class="about-decor-circle two"></span>
+    <span class="about-decor-circle three"></span>
+    {/* Sparkles */}
+    <span class="about-sparkle s1"></span>
+    <span class="about-sparkle s2"></span>
+    <span class="about-sparkle s3"></span>
+    <span class="about-sparkle s4"></span>
+    <div class="about-container">
+      <h2 class="about-title">Sobre nosotros</h2>
+      <p class="about-subtitle">Personas reales, compromiso auténtico y servicio profesional.</p>
+      <div class="about-card">
+        <div class="about-img-col">
+          <img src={chofer.src} alt="Equipo de Mi Chofer" class="about-img" />
         </div>
-
-        <!-- Columna texto -->
-        <div class="col-md-8">
-          <div class="about-item fade-in-up">
-            <p>
-              <i class="bi bi-shield-check icon-about"></i>
-              En <strong>Mi Chofer</strong> creemos que la <strong
-                >confianza y la seguridad</strong
-              > son fundamentales cuando se trata de traslados personales o corporativos.
-              Todos nuestros choferes son seleccionados, capacitados y evaluados
-              para brindarte un servicio de excelencia.
-            </p>
+        <div class="about-content-col">
+          <div class="about-feature-card">
+            <span class="about-icon bi bi-shield-check"></span>
+            <div>
+              <h3>Confianza y Seguridad</h3>
+              <p>En <strong>Mi Chofer</strong> creemos que la <strong>confianza y la seguridad</strong> son fundamentales. Todos nuestros choferes son seleccionados, capacitados y evaluados para brindarte un servicio de excelencia.</p>
+            </div>
           </div>
-
-          <div class="about-item fade-in-up delay-1">
-            <p>
-              <i class="bi bi-people-fill icon-about"></i>
-              Nuestro equipo está compuesto por profesionales con <strong
-                >amplia experiencia</strong
-              > en conducción, atención al cliente y compromiso ético. Manejamos
-              con discreción, puntualidad y cortesía.
-            </p>
+          <div class="about-feature-card">
+            <span class="about-icon bi bi-people-fill"></span>
+            <div>
+              <h3>Equipo Profesional</h3>
+              <p>Nuestro equipo está compuesto por profesionales con <strong>amplia experiencia</strong> en conducción, atención al cliente y compromiso ético. Manejamos con discreción, puntualidad y cortesía.</p>
+            </div>
           </div>
-
-          <div class="about-item fade-in-up delay-2">
-            <p>
-              <i class="bi bi-lightning-charge icon-about"></i>
-              Somos una <strong>empresa joven</strong>, formada por un equipo
-              comprometido, que entiende lo importante que es contar con un
-              conductor responsable y puntual para tu día a día, eventos o
-              situaciones especiales.
-            </p>
+          <div class="about-feature-card">
+            <span class="about-icon bi bi-lightning-charge"></span>
+            <div>
+              <h3>Empresa Joven</h3>
+              <p>Somos una <strong>empresa joven</strong>, formada por un equipo comprometido, que entiende lo importante que es contar con un conductor responsable y puntual para tu día a día, eventos o situaciones especiales.</p>
+            </div>
           </div>
-
-          <div class="about-item fade-in-up delay-3">
-            <p>
-              <i class="bi bi-heart-fill icon-about"></i>
-              Elegir Mi Chofer es confiar en una empresa que pone a las personas
-              en primer lugar. <strong>Te acompañamos con compromiso</strong>,
-              para que vos puedas enfocarte en lo que realmente importa.
-            </p>
+          <div class="about-feature-card">
+            <span class="about-icon bi bi-heart-fill"></span>
+            <div>
+              <h3>Compromiso Humano</h3>
+              <p>Elegir Mi Chofer es confiar en una empresa que pone a las personas en primer lugar. <strong>Te acompañamos con compromiso</strong>, para que vos puedas enfocarte en lo que realmente importa.</p>
+            </div>
           </div>
         </div>
       </div>

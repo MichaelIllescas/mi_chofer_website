@@ -1,48 +1,75 @@
 .faq-section {
- 
+
   position: relative;
   z-index: 3;
+  background: linear-gradient(135deg, #232526 0%, #414345 100%);
+  padding: 3rem 0;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 }
 
 .faq-section h2 {
   font-size: 2.8rem;
-  font-weight: 700;
+  font-weight: 800;
   color: #fff;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
 .accordion-button {
   font-weight: 600;
-  font-size: 1.1rem;
-  background-color: #2b2b2b;
+  font-size: 1.15rem;
+  background-color: #232526;
   color: #fff;
-  transition: background-color 0.3s ease;
+  border-radius: 1rem 1rem 0 0;
+  padding: 1rem 1.5rem;
+  box-shadow: none;
+  border: none;
+  transition: background 0.3s, color 0.3s;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
 }
 
 
 .accordion-button:not(.collapsed) {
-  background-color: #0d6efd;
+  background: linear-gradient(90deg, #0d6efd 0%, #00c6ff 100%);
   color: #fff;
 }
 
 .accordion-body {
-  background-color: #333;
-  color: #ddd;
-  font-size: 1rem;
-  line-height: 1.6;
+  background: rgba(44, 44, 44, 0.95);
+  color: #eaeaea;
+  font-size: 1.08rem;
+  line-height: 1.7;
+  padding: 1.2rem 1.5rem;
+  border-radius: 0 0 1rem 1rem;
+  box-shadow: none;
 }
 
 .accordion-item {
   border: none;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   overflow: hidden;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  background: rgba(255,255,255,0.04);
+  backdrop-filter: blur(2px);
+  transition: box-shadow 0.3s;
+}
+ 
+.accordion-item:hover {
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+}
+
+.accordion-header {
+  font-family: 'Montserrat', Arial, sans-serif;
 }
 
 /* Animación */
 .animate-fade {
   opacity: 0;
   transform: translateY(30px);
-  animation: fadeInUp 0.6s ease forwards;
+  animation: fadeInUp 0.7s cubic-bezier(0.23, 1, 0.32, 1) forwards;
 }
 
 @keyframes fadeInUp {

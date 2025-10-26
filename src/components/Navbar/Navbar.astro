@@ -1,16 +1,16 @@
 ---
-import logo from '../../assets/img/logo-removebg-preview (2).png';
+import logo from '../../assets/img/logo-removebg-preview (2).webp';
 import '../Navbar/Nav.css';
 const phoneNumber = "5492392522277";
 const message = "Hola, quiero hacer una consulta sobre mi chofer.";
 const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 ---
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm " id="nav" >
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top" id="nav" >
   <div class="container">
-    <!-- Logo sin texto -->
+    <!-- Logo -->
     <a href="#nav" class="navbar-brand d-flex align-items-center">
-      <img src={logo.src} alt="Logo" class="navbar-logo me-2" />
+      <img src={logo.src} alt="Mi Chofer Logo" class="navbar-logo me-2" />
     </a>
 
     <button
@@ -29,7 +29,7 @@ const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(mess
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
       
         <li class="nav-item">
-          <a class="nav-link " href="#como-funciona">Cómo Funciona</a>
+          <a class="nav-link" href="#como-funciona">Cómo Funciona</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#beneficios">Beneficios</a>
@@ -46,11 +46,15 @@ const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(mess
       </ul>
 
       <!-- Botón CTA -->
+        <a href={whatsappUrl} target="_blank" class="btn btn-primary ms-lg-3" aria-label="Contactar por WhatsApp">
+          <i class="fab fa-whatsapp me-2"></i>
+          Solicitar Servicio
+        </a>
+    </div>
+  </div>
+</nav>
 
-        <a href={whatsappUrl} target="_blank" class="btn btn-primary ms-lg-3" aria-label="contactar por whatsapp">
-      
-        Solicitar Servicio
-      </a>
+<script src="/src/js/navbar.js"></script>
     </div>
   </div>
 </nav>

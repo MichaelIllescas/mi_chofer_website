@@ -1,69 +1,86 @@
+/* Fondo degradado y bordes superiores redondeados */
 .footer {
-  background-color: #111;
-  font-size: 0.95rem;
+  background: linear-gradient(120deg, #232526 0%, #414345 100%);
+  font-size: 1.05rem;
   position: relative;
   z-index: 3;
+
+  box-shadow: 0 -4px 24px rgba(0,0,0,0.18);
+  padding-bottom: 2.5rem;
 }
 
 .footer h5 {
-  font-weight: 600;
-  color: #fff;
-  margin-bottom: 1rem;
+  font-weight: 700;
+  color: #fda085;
+  margin-bottom: 1.2rem;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.12);
 }
 
-/* Contenido alineado a la izquierda */
 .footer .footer-content {
   text-align: left;
   display: inline-block;
-  min-width: 200px;
-}
-
-/* Estilo de los enlaces */
-.footer-links li {
-  margin-bottom: 0.4rem;
+  min-width: 220px;
+  padding: 0.5rem 0.5rem 0.5rem 0;
 }
 
 .footer-link {
-  color: #aaa;
+  color: #f8f8f8;
   text-decoration: none;
   display: block;
-  transition: color 0.2s ease;
+  font-weight: 500;
+  padding: 0.2rem 0.1rem;
+  border-radius: 0.5rem;
+  transition: background 0.2s, color 0.2s;
+  position: relative;
+  overflow: hidden;
 }
-
 .footer-link:hover {
-  color: #283f62;
+  color: #fda085;
+  background: rgba(253, 160, 133, 0.08);
   text-decoration: none;
+  box-shadow: 0 2px 8px rgba(253,160,133,0.08);
 }
 
 .footer p {
-  color: #ccc;
-  margin-bottom: 0.5rem;
+  color: #eaeaea;
+  margin-bottom: 0.7rem;
+  font-size: 1.07rem;
+  letter-spacing: 0.2px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.footer p i {
+  font-size: 1.25rem;
+  margin-right: 0.4rem;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.18));
 }
 
 .footer .text-secondary {
-  color: #888 !important;
+  color: #b0b8c1 !important;
+  font-size: 0.98rem;
+  letter-spacing: 0.5px;
 }
-
 
 @media (max-width: 767.98px) {
   .footer .footer-content {
     text-align: center !important;
     display: block;
     margin: 0 auto;
+    padding: 0.5rem 0;
   }
-
   .footer-links {
     padding-left: 0;
   }
-
   .footer-links li {
     text-align: center;
   }
-
   .footer p {
     text-align: center;
+    justify-content: center;
   }
-
   .footer h5 {
     text-align: center;
   }

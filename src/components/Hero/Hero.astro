@@ -6,33 +6,45 @@ const message = "Hola, quiero hacer una consulta sobre mi chofer.";
 const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 ---
 
+
+
 <section class="hero" id="hero">
-  <!-- Video de fondo -->
-  <video class="bg-video" playsinline autoplay muted loop>
+  <video class="hero-video" autoplay muted loop playsinline>
     <source src={video} type="video/mp4" />
   </video>
-
-  <!-- Contenido encima del video -->
-  <div class="masthead d-flex align-items-center">
-    <div class="masthead-content text-white text-center w-100">
-      <div class="container px-4 px-lg-0">
-        <h1 class="display-4 fw-bold mb-4">
-          Tu chofer privado, cuando lo necesites
-        </h1>
-        <p class="lead mb-5">
-          Confiá en <bold>Mi Chofer </bold>para tus traslados seguros, puntuales y
-          profesionales.
-        </p>
-
-        <!-- Botón CTA a WhatsApp -->
-        <a
-          href={whatsappUrl}
-          target="_blank"
-          class="btn btn-lg btn-success px-4 py-2"
-        >
-          Pedí tu Chofer
-        </a>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="badge-text">★ Servicio Premium</span>
+    </div>
+    <h1 class="hero-title">Tu chofer privado,<br><span>cuando lo necesites</span></h1>
+    <p class="hero-desc">Confiá en <strong>Mi Chofer</strong> para tus traslados seguros, puntuales y profesionales.</p>
+    <div class="hero-actions">
+      <a href={whatsappUrl} target="_blank" class="hero-cta">Pedí tu Chofer</a>
+      <a href="#como-funciona" class="hero-secondary">Cómo Funciona</a>
+    </div>
+    <div class="hero-features">
+      <div class="feature-item">
+        <span class="feature-icon">⏰</span>
+        <h6>Disponible 24/7</h6>
+        <p>Servicio las 24 horas</p>
       </div>
+      <div class="feature-item">
+        <span class="feature-icon">🛡️</span>
+        <h6>100% Seguro</h6>
+        <p>Choferes verificados</p>
+      </div>
+      <div class="feature-item">
+        <span class="feature-icon">📍</span>
+        <h6>Seguimiento GPS</h6>
+        <p>Ubicación en tiempo real</p>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <a href="#como-funciona" class="scroll-link">
+        <span class="scroll-icon">▼</span>
+        <span class="scroll-text">Descubre más</span>
+      </a>
     </div>
   </div>
 </section>

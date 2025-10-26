@@ -1,46 +1,180 @@
-/* Beneficios Section */
-#beneficios {
-  position: relative;
-  z-index: 3; /* mayor que el video y el overlay del hero */
-  background-color: #1a1a1a; /* fondo sólido para evitar transparencia */
-  padding: 5rem 0;
+.benefits-decor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
 }
 
-#beneficios h2 {
+.decor-circle, .decor-square {
+  position: absolute;
+  opacity: 0.45;
+  transition: opacity 0.3s;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  border: 2.5px solid #fff;
+}
+.decor-circle {
+  border-radius: 50%;
+  background: radial-gradient(circle at 60% 40%, #4fc3f7 70%, #2ecc71 100%);
+}
+.decor-square {
+  border-radius: 18px;
+  background: linear-gradient(135deg, #f7b731 60%, #0d6efd 100%);
+}
+.decor-c1 {
+  width: 120px;
+  height: 120px;
+  top: 8%;
+  left: 3%;
+  animation: float1 7s ease-in-out infinite;
+}
+.decor-c2 {
+  width: 80px;
+  height: 80px;
+  bottom: 10%;
+  right: 7%;
+  animation: float2 6s ease-in-out infinite;
+}
+.decor-s1 {
+  width: 60px;
+  height: 60px;
+  top: 60%;
+  left: 2%;
+  animation: float3 8s ease-in-out infinite;
+}
+.decor-s2 {
+  width: 40px;
+  height: 40px;
+  bottom: 18%;
+  right: 12%;
+  animation: float4 5s ease-in-out infinite;
+}
+@keyframes float1 {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-30px) scale(1.08); }
+}
+@keyframes float2 {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(25px) scale(1.05); }
+}
+@keyframes float3 {
+  0%, 100% { transform: translateX(0) scale(1); }
+  50% { transform: translateX(18px) scale(1.07); }
+}
+@keyframes float4 {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-15px) scale(1.1); }
+}
+
+@media (max-width: 992px) {
+  .decor-c1 { width: 70px; height: 70px; top: 5%; left: 2%; }
+  .decor-c2 { width: 50px; height: 50px; bottom: 7%; right: 4%; }
+  .decor-s1 { width: 35px; height: 35px; top: 65%; left: 1%; }
+  .decor-s2 { width: 25px; height: 25px; bottom: 12%; right: 7%; }
+}
+
+.benefits-section {
+  position: relative;
+  z-index: 3;
+  background: linear-gradient(135deg, #232526 0%, #414345 100%);
+  padding: 5rem 0 4rem 0;
+}
+
+.benefits-title {
   font-size: 2.5rem;
-  font-weight: 700;
+  font-weight: 800;
   color: #fff;
-  margin-top: -50px;
-}
-
-#beneficios p {
-  font-size: 1.1rem;
-  color: #d3d3d3;
   margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.25);
 }
 
-#beneficios img {
+.benefits-img {
   max-width: 100%;
-  height: 300px;
-  position: relative;
-  border-radius: 0.9rem;
-  margin-top: 50px;
+  height: 280px;
+  border-radius: 1.2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  object-fit: cover;
 }
 
-/* Responsive spacing */
-@media (min-width: 992px) {
-  #beneficios {
-    padding: 6rem 0;
-  }
+.benefits-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
 
-  #beneficios h2 {
-    font-size: 3rem;
-  }
+.benefit-card {
+  background: rgba(255,255,255,0.07);
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+  padding: 1.5rem 1.2rem;
+  color: #fff;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.benefit-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(44,62,80,0.18);
+}
+.benefit-icon {
+  font-size: 2.2rem;
+  margin-bottom: 0.7rem;
+  display: block;
+}
+.benefit-card h5 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #4fc3f7;
+}
+.benefit-card p {
+  font-size: 1rem;
+  color: #e0e0e0;
+  margin-bottom: 0;
+}
 
-  #beneficios p {
-    font-size: 1.25rem;
+@media (max-width: 992px) {
+  .benefits-section {
+    padding: 3.5rem 0 2.5rem 0;
   }
+  .benefits-title {
+    font-size: 2rem;
+  }
+  .benefits-cards {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+  .benefits-img {
+    height: 200px;
+  }
+}
 
+@media (max-width: 600px) {
+  .benefits-section {
+    padding: 2.2rem 0 1.2rem 0;
+  }
+  .benefits-title {
+    font-size: 1.3rem;
+  }
+  .benefits-img {
+    height: 120px;
+    border-radius: 0.7rem;
+  }
+  .benefit-card {
+    padding: 1rem 0.7rem;
+    font-size: 0.95rem;
+  }
+  .benefit-icon {
+    font-size: 1.5rem;
+  }
 }
 
 

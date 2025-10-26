@@ -1,53 +1,58 @@
 ---
-import car from "../../assets/img/auto.jpeg";
+import car from "../../assets/img/auto.webp";
 import "./Works.css";
 ---
 
-<section id="como-funciona" class="container my-0">
-  <div class="works-container">
-    <!-- Imagen con animación -->
-    <div class="works-image animate-image">
-      <img src={car.src} alt="Mi Chofer" class="works-img" />
+
+
+
+<section id="como-funciona" class="works-section">
+  <div class="works-decor">
+    <span class="works-circle works-c1"></span>
+    <span class="works-circle works-c2"></span>
+    <span class="works-square works-s1"></span>
+    <span class="works-square works-s2"></span>
+  </div>
+  <div class="container px-4 px-lg-5">
+    <h2 class="works-title mb-5 text-center">¿Cómo funciona Mi Chofer?</h2>
+    <div class="works-layout">
+      <div class="works-img-col">
+        <img src={car.src} alt="Mi Chofer" class="works-img-main" />
+      </div>
+      <div class="works-timeline">
+        <div class="timeline-step">
+          <div class="timeline-icon">📱</div>
+          <div class="timeline-content">
+            <h5>Reservá tu chofer</h5>
+            <p>Contactanos por WhatsApp o web y elegí el día, hora y destino.</p>
+          </div>
+        </div>
+        <div class="timeline-step">
+          <div class="timeline-icon">🚗</div>
+          <div class="timeline-content">
+            <h5>Usá tu propio vehículo</h5>
+            <p>Un conductor profesional llega a tu domicilio y maneja tu auto por vos.</p>
+          </div>
+        </div>
+        <div class="timeline-step">
+          <div class="timeline-icon">🛡️</div>
+          <div class="timeline-content">
+            <h5>Viaje seguro y cómodo</h5>
+            <p>Disfrutá el traslado sin preocupaciones, con puntualidad y discreción.</p>
+          </div>
+        </div>
+        <div class="timeline-step">
+          <div class="timeline-icon">🎉</div>
+          <div class="timeline-content">
+            <h5>Relajate y disfrutá</h5>
+            <p>Olvidate del tráfico, estacionamiento o manejar si bebiste. Nosotros te llevamos y traemos.</p>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <!-- Separador -->
-    <div class="works-separator"></div>
-
-    <!-- Texto con animación -->
-    <div class="works-text animate-text">
-      <h2 class="card-title h5 text-primary mb-3">
-        ¿No querés manejar? Nosotros te llevamos.
-      </h2>
-      <p>
-        <strong>Mi Chofer</strong> te ofrece un servicio personalizado, cómodo y
-        seguro. Nuestro equipo de conductores profesionales está preparado para llevarte
-        a donde necesites, sin preocupaciones.
-      </p>
-
-      <ul class="list-unstyled ms-2 mb-3 small">
-        <li class="mb-1 hover-item">✔️ Salidas nocturnas sin preocupaciones</li>
-        <li class="mb-1 hover-item">
-          ✔️ Evitás el estrés del tráfico y del estacionamiento
-        </li>
-        <li class="mb-1 hover-item">
-          ✔️ Usás tu propio vehículo con nuestro conductor
-        </li>
-        <li class="mb-1 hover-item">
-          ✔️ Ideal para eventos, viajes de negocios y traslados privados
-        </li>
-        <li class="mb-1 hover-item">
-          ✔️ Servicio disponible 24/7 con reserva anticipada
-        </li>
-      </ul>
-
-      <blockquote class="blockquote text-secondary small fst-italic mt-3">
-        "Con Mi Chofer, cada viaje es una experiencia segura y
-        responsable."
-      </blockquote>
-
-      <p class="fw-semibold mt-4">
-        Tu vehículo. <span class="text-primary">Nuestro conductor.</span>
-      </p>
+    <div class="works-extra mt-5 text-center">
+      <blockquote class="works-quote mt-4">“Con Mi Chofer, cada viaje es una experiencia segura y responsable.”</blockquote>
+      <p class="works-slogan mt-3">Tu vehículo. <span class="text-primary">Nuestro conductor.</span></p>
     </div>
   </div>
 </section>

@@ -1,37 +1,46 @@
 ---
 import "../Benefits/benefits.css";
-import benefits from "../../assets/img/benefits.jpeg";
+import benefits from "../../assets/img/benefits.webp";
 ---
 
-<section class="about-section bg-dark" id="beneficios" >
+
+
+<section class="benefits-section" id="beneficios">
+  <div class="benefits-decor">
+    <span class="decor-circle decor-c1"></span>
+    <span class="decor-circle decor-c2"></span>
+    <span class="decor-square decor-s1"></span>
+    <span class="decor-square decor-s2"></span>
+  </div>
   <div class="container px-4 px-lg-5">
     <div class="row gx-5 align-items-center">
-      <div class="col-lg-6 text-center ">
-        <h2 class="mb-4">La libertad de tener tu propio chofer</h2>
-        <img
-          class="img-fluid shadow "
-          src={benefits.src}
-          alt="Beneficios de Mi Chofer"
-        />
+      <div class="col-lg-6 text-center">
+        <h2 class="benefits-title mb-4">La libertad de tener tu propio chofer</h2>
+        <img class="benefits-img" src={benefits.src} alt="Beneficios de Mi Chofer" />
       </div>
-      <div class="col-lg-6 text-white text-center text-lg-start">
-        <p class="text-white-50">
-          Con <strong>Mi Chofer</strong>, accedés a un servicio exclusivo de
-          traslado personalizado, donde vos ponés el vehículo y nosotros nos
-          encargamos del resto.
-        </p>
-        <p class="text-white-50">
-          ¿Estás cansado después de un largo día? ¿Vas a un evento y querés
-          disfrutar sin preocuparte por manejar? ¿Tenés compromisos laborales
-          que requieren puntualidad y concentración? Con Mi Chofer, tenés a
-          disposición un conductor profesional cuando lo necesites.
-        </p>
-        <p class="text-white-50">
-          Despreocupate del tránsito, el estacionamiento o de manejar si
-          bebiste. Nuestro servicio te brinda tranquilidad, seguridad y
-          comodidad en cada traslado, como si tuvieras un chofer propio, sin
-          compromisos ni complicaciones.
-        </p>
+      <div class="col-lg-6">
+        <div class="benefits-cards">
+          <div class="benefit-card">
+            <span class="benefit-icon">🚗</span>
+            <h5>Traslado Personalizado</h5>
+            <p>Vos ponés el vehículo, nosotros nos encargamos del resto. Servicio exclusivo y adaptado a tus necesidades.</p>
+          </div>
+          <div class="benefit-card">
+            <span class="benefit-icon">😌</span>
+            <h5>Comodidad y Tranquilidad</h5>
+            <p>Olvidate del estrés de manejar, estacionar o el tránsito. Disfrutá tu viaje con total seguridad y confort.</p>
+          </div>
+          <div class="benefit-card">
+            <span class="benefit-icon">⏰</span>
+            <h5>Puntualidad y Profesionalismo</h5>
+            <p>Choferes capacitados y responsables, disponibles cuando lo necesites para tus compromisos personales o laborales.</p>
+          </div>
+          <div class="benefit-card">
+            <span class="benefit-icon">🥂</span>
+            <h5>Disfrutá sin Preocupaciones</h5>
+            <p>Si vas a un evento, podés relajarte y disfrutar sin preocuparte por manejar si bebiste o por el regreso.</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
