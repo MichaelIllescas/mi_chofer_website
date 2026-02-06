@@ -1,0 +1,130 @@
+---
+import "./sucursales.css";
+import americaImg from "../../assets/img/america.jpeg";
+import america2Img from "../../assets/img/america2.jpeg";
+import pehuajoImg from "../../assets/img/pehuajo.jpeg";
+import tlImg from "../../assets/img/WhatsApp Image 2025-05-07 at 1.39.17 PM (2).jpeg";
+import "bootstrap-icons/font/bootstrap-icons.css";
+
+const tlPhone = "5492392522277";
+const americaPhone = "542392580599";
+const pehuajoPhone = "542396633038";
+const tlMsg = "Hola, quiero consultar por el servicio de Mi Chofer en Trenque Lauquen.";
+const americaMsg = "Hola, quiero consultar por el servicio de Mi Chofer en América.";
+const pehuajoMsg = "Hola, quiero consultar por el servicio de Mi Chofer en Pehuajó.";
+const tlWa = `https://wa.me/${tlPhone}?text=${encodeURIComponent(tlMsg)}`;
+const americaWa = `https://wa.me/${americaPhone}?text=${encodeURIComponent(americaMsg)}`;
+const pehuajoWa = `https://wa.me/${pehuajoPhone}?text=${encodeURIComponent(pehuajoMsg)}`;
+---
+
+<section class="sucursales-section" id="sucursales">
+  <div class="sucursales-header">
+    <span class="sucursales-badge">Nuestras Sucursales</span>
+    <h2 class="sucursales-title">Estamos donde nos necesitás</h2>
+    <p class="sucursales-subtitle">Mi Chofer está presente en <strong>Trenque Lauquen</strong>, <strong>América</strong> y <strong>Pehuajó</strong>. Elegí tu ciudad y contactanos por WhatsApp.</p>
+  </div>
+
+  <div class="sucursales-grid">
+    <!-- TRENQUE LAUQUEN -->
+    <div class="sucursal-card">
+      <div class="sucursal-slider">
+        <img src={tlImg.src} alt="Mi Chofer Trenque Lauquen" />
+      </div>
+      <div class="sucursal-info">
+        <div class="sucursal-location-badge sede-central">
+          <i class="bi bi-star-fill"></i>
+          <span>Sede Central</span>
+        </div>
+        <h3 class="sucursal-city">Trenque Lauquen</h3>
+        <p class="sucursal-desc">Nuestra sede principal. Donde nació Mi Chofer y seguimos brindando el mejor servicio de chofer privado.</p>
+        <div class="sucursal-contact">
+          <a href={tlWa} target="_blank" rel="noopener noreferrer" class="sucursal-wa-btn">
+            <i class="bi bi-whatsapp"></i>
+            <span>Contactar por WhatsApp</span>
+          </a>
+          <a href={`tel:+${tlPhone}`} class="sucursal-phone">
+            <i class="bi bi-telephone-fill"></i>
+            <span>2392-522277</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- AMERICA -->
+    <div class="sucursal-card">
+      <div class="sucursal-slider">
+        <div id="carouselAmerica" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3500">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselAmerica" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#carouselAmerica" data-bs-slide-to="1"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src={americaImg.src} alt="Sucursal América" />
+            </div>
+            <div class="carousel-item">
+              <img src={america2Img.src} alt="Sucursal América - vista 2" />
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselAmerica" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselAmerica" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+      <div class="sucursal-info">
+        <div class="sucursal-location-badge">
+          <i class="bi bi-geo-alt-fill"></i>
+          <span>Nueva Sucursal</span>
+        </div>
+        <h3 class="sucursal-city">América</h3>
+        <p class="sucursal-desc">Ahora Mi Chofer está en América. Pedí tu chofer privado de forma rápida y segura por WhatsApp.</p>
+        <div class="sucursal-contact">
+          <a href={americaWa} target="_blank" rel="noopener noreferrer" class="sucursal-wa-btn">
+            <i class="bi bi-whatsapp"></i>
+            <span>Contactar por WhatsApp</span>
+          </a>
+          <a href={`tel:+${americaPhone}`} class="sucursal-phone">
+            <i class="bi bi-telephone-fill"></i>
+            <span>2392-580599</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- PEHUAJO -->
+    <div class="sucursal-card">
+      <div class="sucursal-slider">
+        <img src={pehuajoImg.src} alt="Sucursal Pehuajó" />
+      </div>
+      <div class="sucursal-info">
+        <div class="sucursal-location-badge">
+          <i class="bi bi-geo-alt-fill"></i>
+          <span>Nueva Sucursal</span>
+        </div>
+        <h3 class="sucursal-city">Pehuajó</h3>
+        <p class="sucursal-desc">También llegamos a Pehuajó. Tu chofer profesional está a un mensaje de distancia.</p>
+        <div class="sucursal-contact">
+          <a href={pehuajoWa} target="_blank" rel="noopener noreferrer" class="sucursal-wa-btn">
+            <i class="bi bi-whatsapp"></i>
+            <span>Contactar por WhatsApp</span>
+          </a>
+          <a href={`tel:+${pehuajoPhone}`} class="sucursal-phone">
+            <i class="bi bi-telephone-fill"></i>
+            <span>2396-633038</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Decorativos -->
+  <span class="suc-decor-circle one"></span>
+  <span class="suc-decor-circle two"></span>
+  <span class="suc-sparkle s1"></span>
+  <span class="suc-sparkle s2"></span>
+  <span class="suc-sparkle s3"></span>
+  <span class="suc-sparkle s4"></span>
+</section>
