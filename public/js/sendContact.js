@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 
     try {
-      const response = await fetch('https://email.michofer.com.ar/api/contact', {
+      const response = await fetch('/services/api/send-email.php', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

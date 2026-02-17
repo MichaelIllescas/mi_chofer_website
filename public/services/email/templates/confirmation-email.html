@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensaje recibido - {{APP_NAME}}</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: Arial, sans-serif;">
+    <div style="max-width: 600px; margin: 0 auto; padding: 20px; background: #1a2a2a;">
+        <div style="background: #1e3838; padding: 30px; border-radius: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.3);">
+            <h2 style="color: #4db6ac; text-align: center; margin: 0 0 20px 0;">¡Gracias por contactarnos!</h2>
+            
+            <p style="color: #e0e0e0; line-height: 1.6;">Hola <strong style="color: #4db6ac;">{{CLIENT_NAME}}</strong>,</p>
+            
+            <p style="color: #e0e0e0; line-height: 1.6;">Recibimos tu mensaje correctamente. Te responderemos a la brevedad posible.</p>
+            
+            <div style="background: #234747; padding: 20px; border-radius: 8px; border-left: 4px solid #4db6ac; margin: 20px 0;">
+                <p style="color: #4db6ac; font-weight: bold; margin: 0 0 10px 0;">¿Qué sigue?</p>
+                <ul style="color: #e0e0e0; line-height: 1.8; margin: 0; padding-left: 20px;">
+                    <li>📋 Revisaremos tu consulta en detalle</li>
+                    <li>📧 Te responderemos en las próximas 24-48 horas</li>
+                    <li>🚗 Coordinaremos el servicio que necesites</li>
+                </ul>
+            </div>
+            
+            <p style="text-align: center; color: #4db6ac; font-style: italic; margin: 30px 0; font-size: 16px;">
+                "{{TAGLINE}}"
+            </p>
+            
+            <div style="text-align: center; margin-top: 30px; padding-top: 20px; border-top: 1px solid #234747; font-size: 12px; color: #a0a0a0;">
+                <p style="margin: 0 0 5px 0;"><strong style="color: #4db6ac;">{{APP_NAME}}</strong><br>
+                {{COMPANY}}</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
